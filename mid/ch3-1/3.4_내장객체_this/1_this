@@ -1,0 +1,8 @@
+함수 내부에서 호출하는 this -> global 객체 가리킴
+module.exports -> 함수 안에서든 밖에서든 빈 객체 가리킴
+
+global scope에서 호출하는 this -> 빈 객체 (!= global 객체)
+화살표 함수 내에서의 this -> 빈 객체 가리킴 (== module.exports가 가리키는 객체)
+
+객체의 일반 함수 내부(변수에 할당한 익명함수, function()없는 함수) 의 this -> 함수가 있는 객체 가리킴
+객체의 화살표 함수 내의 this -> 빈 객체 (this가 사용된 스코프의 상위 스코프를 정적으로 봄)

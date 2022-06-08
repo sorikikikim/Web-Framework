@@ -1,0 +1,14 @@
+<!-- wf2-2-28.html -->
+<!--Axios 사용 : 브라우저와 node.js에서 사용할 수 있는 Promise 기반 HTTP 클라이언트 라이브러리-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  //get안에 프로미스 객체를 생성하는 코드가 있음
+  axios.get('https://www.zerocho.com/api/get')
+    .then((result) => {
+      console.log(result);
+      console.log(result.data); // {}
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+</script>

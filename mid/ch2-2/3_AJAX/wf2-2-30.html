@@ -1,0 +1,18 @@
+<!-- wf2-2-30.html -->
+<!--post 메소드 async/await 방식으로 요청-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  (async () => {
+    try {
+	  //post의 경우 데이터를 실어서 보낼 수 있음
+      const result = await axios.post('https://www.zerocho.com/api/post/json', {
+        name: 'zerocho',
+        birth: 1994,
+      });
+      console.log(result);
+      console.log(result.data);
+    } catch (error) {
+      console.error(error);
+    }
+  })();
+</script>

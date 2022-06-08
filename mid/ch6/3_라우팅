@@ -1,0 +1,14 @@
+http 메서드와 uri에 대한 클라이언트 요청에 애플리케이션이 응답하는 방법을 결정하는것
+
+app: express의 인스턴스
+
+method: http 요청 메서드(get, post, put, delete)
+
+path : 서버에서의 경로 ('/', '/users')
+
+callback : 라우팅이 일치할 때 실행할 함수
+
+use대신 get, post, put, patch, delete 등의 http 메서드 사용가능
+=> 라우터를 모듈로 만들어서 사용하려면 use 함수 사용
+
+next('route')로 다음 라우터로 건너뛸 수 있음

@@ -1,0 +1,7 @@
+join은 상대경로로 처리
+path.join('/a', '/b', '/c');
+현재 경로 기준으로 /a/b/c
+
+resolve는 /를 절대경로로 처리
+path.resolve('/a', '/b', '/c');
+'/a'를 무시하고 root밑에 /b/c

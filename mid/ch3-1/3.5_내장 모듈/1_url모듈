@@ -1,0 +1,19 @@
+url.parse(address)
+주소를 분해
+
+url.format(obj)
+분해되었던 url객체를 다시 원래 상태로 조립
+
+http://www.gitbut.co.kr:8080/book/bookList.aspx?sercatel=001001000
+&sercatel=001001001&sercatel=001001002#anchor
+
+protocol: http
+host: www.gitbut.co.kr:8080
+pathname: /book/bookList.aspx
+path: /book/bookList.aspx?sercatel=001001000
+search: ?sercatel=001001000&sercatel=001001001&sercatel=001001002
+query: sercatel=001001000&sercatel=001001001&sercatel=001001002
+
+sercatel=001001000,
+sercatel=001001001,
+sercatel=001001002

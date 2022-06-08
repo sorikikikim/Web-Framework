@@ -1,0 +1,16 @@
+<!-- wf2-2-34.html -->
+<!--html 태그 속성 : data-속성명 / js : 태그.dataset.속성명 -->
+<!--	HTML	  => 	   JS	    -->
+<!--data-user-job => dataset.userJob-->
+<!--	data-id   =>   dataset.id	-->
+<ul>
+  <li data-id="1" data-user-job="programmer">Zero</li>
+  <li data-id="2" data-user-job="designer">Nero</li>
+  <li data-id="3" data-user-job="programmer">Hero</li>
+  <li data-id="4" data-user-job="ceo">Kero</li>
+</ul>
+<script>
+  //js) dataset.monthSalary = 10000 => html) data-month-salary = 10000
+  console.log(document.querySelector('li').dataset);
+  // { id: '1', userJob: 'programmer' }
+</script>

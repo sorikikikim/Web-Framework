@@ -1,0 +1,7 @@
+createServer(requestListener)
+req 객체 : 요청 정보
+res 객체 : 응답 전송
+	-writeHead() : header에 포함할 내용
+	-write() : 응답 body 데이터
+	-end() : 응답 마무리
+listen(port, callback) : 특정 포트에 연결
